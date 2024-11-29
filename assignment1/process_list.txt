@@ -1,0 +1,324 @@
+lyba Kamran
+24155461
+
+//PROCESES LIST.
+
+
+meterpreter > ps
+
+Process List
+============
+
+ PID   PPID  Name       Arch  Session  User           Path
+ ---   ----  ----       ----  -------  ----           ----
+ 0     0     [System P
+             rocess]
+ 4     0     System     x64   0
+ 244   4     smss.exe   x64   0        NT AUTHORITY\  \SystemRoot\S
+                                       SYSTEM         ystem32\smss.
+                                                      exe
+ 312   304   csrss.exe  x64   0        NT AUTHORITY\  C:\Windows\sy
+                                       SYSTEM         stem32\csrss.
+                                                      exe
+ 352   304   wininit.e  x64   0        NT AUTHORITY\  C:\Windows\sy
+             xe                        SYSTEM         stem32\winini
+                                                      t.exe
+ 364   344   csrss.exe  x64   1        NT AUTHORITY\  C:\Windows\sy
+                                       SYSTEM         stem32\csrss.
+                                                      exe
+ 392   344   winlogon.  x64   1        NT AUTHORITY\  C:\Windows\sy
+             exe                       SYSTEM         stem32\winlog
+                                                      on.exe
+ 452   352   services.  x64   0        NT AUTHORITY\  C:\Windows\sy
+             exe                       SYSTEM         stem32\servic
+                                                      es.exe
+ 468   352   lsass.exe  x64   0        NT AUTHORITY\  C:\Windows\sy
+                                       SYSTEM         stem32\lsass.
+                                                      exe
+ 476   352   lsm.exe    x64   0        NT AUTHORITY\  C:\Windows\sy
+                                       SYSTEM         stem32\lsm.ex
+                                                      e
+ 544   452   svchost.e  x64   0        NT AUTHORITY\
+             xe                        LOCAL SERVICE
+ 588   452   svchost.e  x64   0        NT AUTHORITY\
+             xe                        SYSTEM
+ 656   452   VBoxServi  x64   0        NT AUTHORITY\  C:\Windows\Sy
+             ce.exe                    SYSTEM         stem32\VBoxSe
+                                                      rvice.exe
+ 708   452   svchost.e  x64   0        NT AUTHORITY\
+             xe                        NETWORK SERVI
+                                       CE
+ 780   452   svchost.e  x64   0        NT AUTHORITY\
+             xe                        LOCAL SERVICE
+ 852   452   svchost.e  x64   0        NT AUTHORITY\
+             xe                        SYSTEM
+ 892   452   svchost.e  x64   0        NT AUTHORITY\
+             xe                        LOCAL SERVICE
+ 968   3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 976   452   svchost.e  x64   0        NT AUTHORITY\
+             xe                        SYSTEM
+ 1020  452   svchost.e  x64   0        NT AUTHORITY\
+             xe                        NETWORK SERVI
+                                       CE
+ 1072  452   spoolsv.e  x64   0        NT AUTHORITY\  C:\Windows\Sy
+             xe                        SYSTEM         stem32\spools
+                                                      v.exe
+ 1124  452   wrapper.e  x86   0        NT AUTHORITY\
+             xe                        LOCAL SERVICE
+ 1172  312   conhost.e  x64   0        NT AUTHORITY\  C:\Windows\sy
+             xe                        LOCAL SERVICE  stem32\conhos
+                                                      t.exe
+ 1180  452   domain1Se  x64   0        NT AUTHORITY\
+             rvice.exe                 LOCAL SERVICE
+ 1232  452   UI0Detect  x64   0        NT AUTHORITY\
+             .exe                      SYSTEM
+ 1252  452   elasticse  x64   0        NT AUTHORITY\  C:\Program Fi
+             arch-serv                 SYSTEM         les\elasticse
+             ice-x64.e                                arch-1.1.1\bi
+             xe                                       n\elasticsear
+                                                      ch-service-x6
+                                                      4.exe
+ 1260  312   conhost.e  x64   0        NT AUTHORITY\  C:\Windows\sy
+             xe                        SYSTEM         stem32\conhos
+                                                      t.exe
+ 1276  452   sppsvc.ex  x64   0        NT AUTHORITY\
+             e                         NETWORK SERVI
+                                       CE
+ 1296  452   jenkins.e  x64   0        NT AUTHORITY\
+             xe                        LOCAL SERVICE
+ 1328  1180  cmd.exe    x64   0        NT AUTHORITY\  C:\Windows\sy
+                                       LOCAL SERVICE  stem32\cmd.ex
+                                                      e
+ 1336  312   conhost.e  x64   0        NT AUTHORITY\  C:\Windows\sy
+             xe                        LOCAL SERVICE  stem32\conhos
+                                                      t.exe
+ 1368  312   conhost.e  x64   0        NT AUTHORITY\  C:\Windows\sy
+             xe                        LOCAL SERVICE  stem32\conhos
+                                                      t.exe
+ 1372  1328  java.exe   x64   0        NT AUTHORITY\  C:\ProgramDat
+                                       LOCAL SERVICE  a\Oracle\Java
+                                                      \javapath\jav
+                                                      a.exe
+ 1392  1124  java.exe   x86   0        NT AUTHORITY\  C:\ManageEngi
+                                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\j
+                                                      re\bin\java.e
+                                                      xe
+ 1408  312   conhost.e  x64   0        NT AUTHORITY\  C:\Windows\sy
+             xe                        LOCAL SERVICE  stem32\conhos
+                                                      t.exe
+ 1552  452   jmx.exe    x64   0        NT AUTHORITY\
+                                       LOCAL SERVICE
+ 1584  312   conhost.e  x64   0        NT AUTHORITY\  C:\Windows\sy
+             xe                        LOCAL SERVICE  stem32\conhos
+                                                      t.exe
+ 1664  452   dcnotific  x86   0        NT AUTHORITY\
+             ationserv                 LOCAL SERVICE
+             er.exe
+ 1708  452   dcserverh  x86   0        NT AUTHORITY\
+             ttpd.exe                  LOCAL SERVICE
+ 1904  1552  cmd.exe    x64   0        NT AUTHORITY\  C:\Windows\sy
+                                       LOCAL SERVICE  stem32\cmd.ex
+                                                      e
+ 1916  1904  java.exe   x64   0        NT AUTHORITY\  C:\openjdk6\o
+                                       LOCAL SERVICE  penjdk-1.6.0-
+                                                      unofficial-b2
+                                                      7-windows-amd
+                                                      64\jre\bin\ja
+                                                      va.exe
+ 1940  1708  dcrotatel  x86   0        NT AUTHORITY\  C:\ManageEngi
+             ogs.exe                   LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\a
+                                                      pache\bin\dcr
+                                                      otatelogs.exe
+ 2000  1296  java.exe   x64   0        NT AUTHORITY\  C:\ProgramDat
+                                       LOCAL SERVICE  a\Oracle\Java
+                                                      \javapath\jav
+                                                      a.exe
+ 2044  1372  java.exe   x64   0        NT AUTHORITY\  C:\Program Fi
+                                       LOCAL SERVICE  les\Java\jdk1
+                                                      .8.0_144\bin\
+                                                      java.exe
+ 2056  312   conhost.e  x64   0        NT AUTHORITY\  C:\Windows\sy
+             xe                        LOCAL SERVICE  stem32\conhos
+                                                      t.exe
+ 2060  452   cygrunsrv  x64   0        VAGRANT-2008R  C:\Program Fi
+             .exe                      2\sshd_server  les\OpenSSH\b
+                                                      in\cygrunsrv.
+                                                      exe
+ 2128  1708  dcserverh  x86   0        NT AUTHORITY\  C:\ManageEngi
+             ttpd.exe                  LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\a
+                                                      pache\bin\dcs
+                                                      erverhttpd.ex
+                                                      e
+ 2220  2128  dcrotatel  x86   0        NT AUTHORITY\  C:\ManageEngi
+             ogs.exe                   LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\a
+                                                      pache\bin\dcr
+                                                      otatelogs.exe
+ 2228  312   conhost.e  x64   0        NT AUTHORITY\  C:\Windows\sy
+             xe                        LOCAL SERVICE  stem32\conhos
+                                                      t.exe
+ 2232  452   taskhost.  x64   1        VAGRANT-2008R  C:\Windows\sy
+             exe                       2\vagrant      stem32\taskho
+                                                      st.exe
+ 3160  452   svchost.e  x64   0        NT AUTHORITY\
+             xe                        LOCAL SERVICE
+ 3220  312   conhost.e  x64   0        VAGRANT-2008R  C:\Windows\sy
+             xe                        2\sshd_server  stem32\conhos
+                                                      t.exe
+ 3268  452   tomcat8.e  x64   0        NT AUTHORITY\  C:\Program Fi
+             xe                        SYSTEM         les\Apache So
+                                                      ftware Founda
+                                                      tion\tomcat\a
+                                                      pache-tomcat-
+                                                      8.0.33\bin\to
+                                                      mcat8.exe
+ 3280  312   conhost.e  x64   0        NT AUTHORITY\  C:\Windows\sy
+             xe                        LOCAL SERVICE  stem32\conhos
+                                                      t.exe
+ 3316  312   conhost.e  x64   0        NT AUTHORITY\  C:\Windows\sy
+             xe                        SYSTEM         stem32\conhos
+                                                      t.exe
+ 3332  3184  sshd.exe   x64   0        VAGRANT-2008R  C:\Program Fi
+                                       2\sshd_server  les\OpenSSH\u
+                                                      sr\sbin\sshd.
+                                                      exe
+ 3432  452   httpd.exe  x64   0        NT AUTHORITY\
+                                       LOCAL SERVICE
+ 3440  3228  cmd.exe    x86   0        NT AUTHORITY\  C:\Windows\Sy
+                                       LOCAL SERVICE  sWOW64\CMD.ex
+                                                      e
+ 3476  3440  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 3540  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 3596  452   mysqld.ex  x64   0        NT AUTHORITY\  c:\wamp\bin\m
+             e                         SYSTEM         ysql\mysql5.5
+                                                      .20\bin\mysql
+                                                      d.exe
+ 3640  3432  httpd.exe  x64   0        NT AUTHORITY\  C:\wamp\bin\a
+                                       LOCAL SERVICE  pache\apache2
+                                                      .2.21\bin\htt
+                                                      pd.exe
+ 3656  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 3664  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 3672  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 3680  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 3688  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 3696  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 4084  452   wlms.exe   x64   0        NT AUTHORITY\  C:\Windows\sy
+                                       SYSTEM         stem32\wlms\w
+                                                      lms.exe
+ 4172  452   svchost.e  x64   0        NT AUTHORITY\
+             xe                        NETWORK SERVI
+                                       CE
+ 4252  452   svchost.e  x64   0        NT AUTHORITY\
+             xe                        NETWORK SERVI
+                                       CE
+ 4432  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 4440  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 4448  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 4456  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 4468  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 4476  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 4496  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 4508  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 4516  3476  postgres.  x86   0        NT AUTHORITY\  C:\ManageEngi
+             exe                       LOCAL SERVICE  ne\DesktopCen
+                                                      tral_Server\p
+                                                      gsql\bin\post
+                                                      gres.exe
+ 5264  976   dwm.exe    x64   1        VAGRANT-2008R  C:\Windows\sy
+                                       2\vagrant      stem32\Dwm.ex
+                                                      e
+ 5272  5248  explorer.  x64   1        VAGRANT-2008R  C:\Windows\Ex
+             exe                       2\vagrant      plorer.EXE
+ 5432  5272  VBoxTray.  x64   1        VAGRANT-2008R  C:\Windows\Sy
+             exe                       2\vagrant      stem32\VBoxTr
+                                                      ay.exe
+ 5468  5272  DesktopCe  x86   1        VAGRANT-2008R  C:\ManageEngi
+             ntral.exe                 2\vagrant      ne\DesktopCen
+                                                      tral_Server\b
+                                                      in\DesktopCen
+                                                      tral.exe
+ 5580  452   svchost.e  x64   0        NT AUTHORITY\
+             xe                        LOCAL SERVICE
+ 5624  5272  cmd.exe    x64   1        VAGRANT-2008R  C:\Windows\sy
+                                       2\vagrant      stem32\cmd.ex
+                                                      e
+ 5636  364   conhost.e  x64   1        VAGRANT-2008R  C:\Windows\sy
+             xe                        2\vagrant      stem32\conhos
+                                                      t.exe
+ 5832  452   msdtc.exe  x64   0        NT AUTHORITY\
+                                       NETWORK SERVI
+                                       CE
+
+meterpreter > 
