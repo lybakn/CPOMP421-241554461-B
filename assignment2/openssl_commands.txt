@@ -1,0 +1,42 @@
+ GNU nano 8.1                                    openssl_commands.txt *                                            
+1. Generate a private key:
+   Command:
+   openssl genpkey -algorithm RSA -out private.key -pkeyopt rsa_keygen_bits:2048
+
+2. Generate a public key:
+   Command:
+   openssl rsa -in private.key -pubout -out public.key
+
+3. Create a Certificate Signing Request (CSR):
+   Command:
+   openssl req -new -key private.key -out request.csr
+   (You will be prompted to enter the Distinguished Name fields: Country, State, Locality, Organization, Organizati>
+
+4. Create a self-signed certificate:
+   Command:
+   openssl x509 -req -days 365 -in request.csr -signkey private.key -out self_signed_certificate.crt
+
+5. Generate the CA private key:
+   Command:
+   openssl genpkey -algorithm RSA -out ca_private_key.pem -pkeyopt rsa_keygen_bits:2048
+
+6. Create the self-signed CA certificate:
+   Command:
+   openssl req -new -x509 -days 365 -key ca_private_key.pem -out ca_certificate.crt
+   (You will be prompted to enter the Distinguished Name fields for the CA certificate.)
+7. Issue a certificate using the CA:
+   Command:
+   openssl x509 -req -days 365 -in request.csr -CA ca_certificate.crt -CAkey ca_private_key.pem -CAcreateserial -ou>
+   (This will use the CA certificate to sign the CSR and generate an issued certificate.)
+
+8. Verify the issued certificate:
+   Command:
+   openssl verify -CAfile ca_certificate.crt issued_certificate.crt
+   (This verifies that the issued certificate is correctly signed by the CA certificate.)
+
+
+
+
+
+
+
